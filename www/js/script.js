@@ -1,0 +1,1 @@
+$(document).ready(function(){$(function(){!function(){var e=0;$imageEls=$(".container .slide"),setInterval(function(){e=e+1<$imageEls.length?e+1:0,$imageEls.eq(e).addClass("show"),$imageEls.eq(e-1).removeClass("show")},2e3)}()})});
