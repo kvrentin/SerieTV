@@ -1,8 +1,142 @@
+<<<<<<< Updated upstream
 @import "../../node_modules/jquery-ui-dist/jquery-ui.css";
 
 body{
   background-size: cover;
   background-repeat: no-repeat;
+=======
+//Variables
+$color : #1db16b;
+$police : 'Roboto', sans-serif;
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+
+}
+.load{
+  animation: slide 1s;
+}
+
+.slider{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  animation: slide 35s infinite;
+}
+
+.content{
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0 , 0, 0.85);
+}
+
+.principal{
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 20px;
+  font-family: $police;
+  color: $color;
+}
+
+@keyframes slide {
+  0%{
+      background-image: url('../img/The_Flash.jpg');
+  }
+  20%{
+      background-image: url('../img/Black_Mirror.jpg');
+  }
+  40%{
+      background-image: url('../img/Breaking_Bad.jpg');
+  }
+  60%{
+      background-image: url('../img/Walking_Dead.jpg');
+  }
+  80%{
+      background-image: url('../img/Black_Mirror.jpg');
+  }
+  100%{
+      background-image: url('../img/Game_of_Thrones.jpg');
+  }
+}
+
+form {
+  position: relative;
+  top: 22%;
+  margin: auto;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 55%;
+  padding-right: 130px;
+  margin: 20px 4px;
+  background: transparent;
+  border: 0px solid transparent;
+  border-bottom: 2px solid #1db16b;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: $color;
+}
+
+input[type="text"]:focus {
+outline: none;
+}
+::placeholder {
+  color: $color;
+}
+
+input[type = "submit"] {
+  margin-left: 40px;
+	background-color:transparent;
+	border-radius:17px;
+  border: 2px solid #1db16b;
+	color:#ffffff;
+	font-family: $police;
+	font-size:17px;
+	padding:12px 24px;
+  transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+input[type = "submit"]:hover {
+  color: #000 !important;
+	background-color: $color;
+	text-shadow: nthree;
+  cursor: pointer;
+}
+
+.card {
+  position: absolute;
+  top: 65%;
+  left: 15%;
+  width: 9%;
+  height: auto;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.42,0,0.58,1);
+}
+
+.card:hover {
+  border-radius: 20px;
+}
+
+img {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.8s cubic-bezier(0.42,0,0.58,1);
+}
+
+img:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
+  opacity: 0.7;
+>>>>>>> Stashed changes
 }
 ul#output{margin: auto; text-align: center;width: 80%;}
 ul#output li{list-style: none; display: inline; padding:5px}
