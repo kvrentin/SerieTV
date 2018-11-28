@@ -5,7 +5,6 @@
   "main": "index.js",
   "dependencies": {
     "jquery": "^3.3.1",
-    "jquery-autocomplete": "^1.2.8",
     "jquery-ui-dist": "^1.12.1"
   },
   "devDependencies": {},

@@ -1,6 +1,12 @@
+@import url(../../node_modules/jquery-ui-dist/jquery-ui.css);
 html, body {
   padding: 0px;
   margin: 0px;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .load {
@@ -85,10 +91,6 @@ form {
   top: 22%;
   margin: auto;
   text-align: center;
-@import url(../../node_modules/jquery-ui-dist/jquery-ui.css);
-body {
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 input[type="text"] {
@@ -103,23 +105,23 @@ input[type="text"] {
   color: #1db16b;
 }
 
-input[type="text"]:focus {
+input[type="text"] :focus {
   outline: none;
 }
 
-::-webkit-input-placeholder {
+input[type="text"] ::-webkit-input-placeholder {
   color: #1db16b;
 }
 
-:-ms-input-placeholder {
+input[type="text"] :-ms-input-placeholder {
   color: #1db16b;
 }
 
-::-ms-input-placeholder {
+input[type="text"] ::-ms-input-placeholder {
   color: #1db16b;
 }
 
-::placeholder {
+input[type="text"] ::placeholder {
   color: #1db16b;
 }
 
@@ -137,7 +139,7 @@ input[type="submit"] {
   transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-input[type="submit"]:hover {
+input[type="submit"] :hover {
   color: #000 !important;
   background-color: #1db16b;
   text-shadow: nthree;
@@ -156,30 +158,28 @@ input[type="submit"]:hover {
   transition: all 0.8s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-.card:hover {
+.card :hover {
   border-radius: 20px;
 }
 
-img {
-  -webkit-box-sizing: border-box;
+/*img {
   box-sizing: border-box;
   width: 100%;
   cursor: pointer;
-  -webkit-transition: all 0.8s cubic-bezier(0.42, 0, 0.58, 1);
-  -o-transition: all 0.8s cubic-bezier(0.42, 0, 0.58, 1);
-  transition: all 0.8s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.8s cubic-bezier(0.42,0,0.58,1);
+  :hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+}
+*/
 ul#output {
   margin: auto;
   text-align: center;
   width: 80%;
 }
 
-img:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  border-radius: 10px;
-  opacity: 0.7;
 ul#output li {
   list-style: none;
   display: inline;

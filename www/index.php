@@ -13,29 +13,27 @@
       </div>
 
       <div class="content">
-
         <div class="principal">
           <h1>NETFLEX</h1>
         </div>
 
           <form>
-             <input type="text" name="pseudo" id="pseudo" placeholder="Rechercher une série" onfocus="this.placeholder = ''" onblur= "this.placeholder = 'Rechercher une série'" size="30" maxlength="70" autocomplete="off" />
+             <input type="text" name="pseudo" id="valeur" placeholder="Rechercher une série" onfocus="this.placeholder = ''" onblur= "this.placeholder = 'Rechercher une série'" size="30" maxlength="70" autocomplete="off" />
              <input type="submit" value="AJOUTER" />
           </form>
 
-          <div class="card">
-            <img src="IMG/test.jpg" alt="Arrow" >
+
+          <div class="outer">
+                    <div class="inner">
+                    <header id="TMDBtitle"></header>
+                    </div>
           </div>
 
+          <ul id="output">
+
+          </ul>
         </div>
       </div>
-    </div>
-  </body>
-</html>
-
-      <ul id="output">
-
-      </ul>
 
     <script src="js/script.js"></script>
 

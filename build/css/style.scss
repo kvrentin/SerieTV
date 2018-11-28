@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
 @import "../../node_modules/jquery-ui-dist/jquery-ui.css";
 
-body{
-  background-size: cover;
-  background-repeat: no-repeat;
-=======
 //Variables
 $color : #1db16b;
 $police : 'Roboto', sans-serif;
@@ -12,7 +7,10 @@ $police : 'Roboto', sans-serif;
 html, body {
   padding: 0px;
   margin: 0px;
-
+}
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .load{
   animation: slide 1s;
@@ -83,14 +81,16 @@ input[type="text"] {
   font-size: 50px;
   letter-spacing: 1px;
   color: $color;
+  :focus {
+    outline: none;
+  }
+  ::placeholder {
+    color: $color;
+  }
 }
 
-input[type="text"]:focus {
-outline: none;
-}
-::placeholder {
-  color: $color;
-}
+
+
 
 input[type = "submit"] {
   margin-left: 40px;
@@ -102,13 +102,12 @@ input[type = "submit"] {
 	font-size:17px;
 	padding:12px 24px;
   transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
-}
-
-input[type = "submit"]:hover {
-  color: #000 !important;
-	background-color: $color;
-	text-shadow: nthree;
-  cursor: pointer;
+  :hover {
+    color: #000 !important;
+  	background-color: $color;
+  	text-shadow: nthree;
+    cursor: pointer;
+  }
 }
 
 .card {
@@ -119,25 +118,36 @@ input[type = "submit"]:hover {
   height: auto;
   overflow: hidden;
   transition: all 0.8s cubic-bezier(0.42,0,0.58,1);
+  :hover {
+    border-radius: 20px;
+  }
 }
 
-.card:hover {
-  border-radius: 20px;
-}
 
-img {
+/*img {
   box-sizing: border-box;
   width: 100%;
   cursor: pointer;
   transition: all 0.8s cubic-bezier(0.42,0,0.58,1);
+  :hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    opacity: 0.7;
+  }
 }
-
-img:hover {
-  transform: scale(1.05);
-  border-radius: 10px;
-  opacity: 0.7;
->>>>>>> Stashed changes
+*/
+ul#output{
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  li{
+    list-style: none;
+    display: inline;
+    padding:5px
+  }
+  p{
+    width: 180px;
+    margin: 0;
+    text-align: center;
+  }
 }
-ul#output{margin: auto; text-align: center;width: 80%;}
-ul#output li{list-style: none; display: inline; padding:5px}
-ul#output p{width: 180px; margin: 0; text-align: center;}
