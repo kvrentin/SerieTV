@@ -1,7 +1,7 @@
 @import "../../node_modules/jquery-ui-dist/jquery-ui.css";
 
 //Variables
-$color : #1db16b;
+$vert : #1db16b;
 $police : 'Roboto', sans-serif;
 
 html, body {
@@ -43,7 +43,7 @@ body{
   text-align: center;
   font-size: 20px;
   font-family: $police;
-  color: $color;
+  color: $vert;
 }
 
 @keyframes slide {
@@ -83,12 +83,12 @@ input[type="text"] {
   border-bottom: 2px solid #1db16b;
   font-size: 50px;
   letter-spacing: 1px;
-  color: $color;
+  color: $vert;
   &:focus {
     outline: none;
   }
   &::placeholder {
-    color: $color;
+    color: $vert;
   }
 }
 
@@ -107,7 +107,7 @@ input[type = "submit"]{
   transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
   &:hover{
     color: #000 !important;
-  	background-color: $color;
+  	background-color: $vert;
   	text-shadow: nthree;
     cursor: pointer;
   }
@@ -187,7 +187,13 @@ ul#output{
     font-size: 25px;
     color: #737373;
     &:hover {
-    color: $color;
+    color: $vert;
+    background-color: transparent;
+    border: none;
+    }
+    &:focus {
+    background-color: transparent;
+    border: none;
     }
   }
 }
