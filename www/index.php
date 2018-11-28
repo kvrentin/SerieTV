@@ -15,6 +15,7 @@
       <div class="content">
         <div class="principal">
           <h1>NETFLEX</h1>
+
         </div>
 
           <form>
@@ -23,6 +24,8 @@
           </form>
 
 
+          <h2>Ma WatchList</h2>
+          
           <div class="outer">
                     <div class="inner">
                     <header id="TMDBtitle"></header>

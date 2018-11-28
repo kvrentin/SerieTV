@@ -84,10 +84,10 @@ input[type="text"] {
   font-size: 50px;
   letter-spacing: 1px;
   color: $color;
-  :focus {
+  &:focus {
     outline: none;
   }
-  ::placeholder {
+  &::placeholder {
     color: $color;
   }
 }
@@ -95,7 +95,7 @@ input[type="text"] {
 
 
 
-input[type = "submit"] {
+input[type = "submit"]{
   margin-left: 40px;
 	background-color:transparent;
 	border-radius:17px;
@@ -105,11 +105,32 @@ input[type = "submit"] {
 	font-size:17px;
 	padding:12px 24px;
   transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
-  :hover {
+  &:hover{
     color: #000 !important;
   	background-color: $color;
   	text-shadow: nthree;
     cursor: pointer;
+  }
+}
+
+h2{
+  color: #fff;
+  position: absolute;
+  top: 55%;
+  display: inline-block;
+  font-size: 40px;
+  left: 12.5%;
+  font-family: $police;
+  &:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #1db16b;
+  transform: scaleX(0);
+  transform-origin:  0% 50%;
+  transition: transform 250ms ease-in-out;
+  }
+  &:hover:after{
+    transform: scaleX(1);
   }
 }
 
@@ -153,4 +174,25 @@ ul#output{
     margin: 0;
     text-align: center;
   }
+}
+
+#ui-id-1{
+  background-color: transparent;
+  border: none;
+}
+
+.ui-menu-item {
+  a{
+    line-height: 50px;
+    font-size: 25px;
+    color: #737373;
+    &:hover {
+    color: $color;
+    }
+  }
+}
+
+.ui-button.ui-state-active:hover {
+	border: none !important;
+	background-color: transparent !important;
 }
