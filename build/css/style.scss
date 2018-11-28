@@ -9,8 +9,9 @@ html, body {
   margin: 0px;
 }
 body{
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .load{
   animation: slide 1s;
@@ -23,7 +24,9 @@ body{
   height: 100vh;
   animation: slide 35s infinite;
 }
-
+.hide-bg {
+    animation: unset;
+}
 .content{
   color: #fff;
   width: 100%;

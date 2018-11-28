@@ -5,8 +5,9 @@ html, body {
 }
 
 body {
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .load {
@@ -21,6 +22,11 @@ body {
   height: 100vh;
   -webkit-animation: slide 35s infinite;
   animation: slide 35s infinite;
+}
+
+.hide-bg {
+  -webkit-animation: unset;
+  animation: unset;
 }
 
 .content {

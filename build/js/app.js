@@ -36,6 +36,7 @@ $(function(){
           console.dir(json);
             document.getElementById('output').innerHTML += "<li><img src='https://image.tmdb.org/t/p/w185"+ json.poster_path +"'><p id='close'>X</p></li>";
             $('body').css('background-image', 'url(http://image.tmdb.org/t/p/original/'+ json.backdrop_path+')');
+            $('.slider').addClass("hide-bg");
             var suppr = document.getElementById('close');
             var parent = suppr.parentNode;
             var parentul = parent.parentNode;
