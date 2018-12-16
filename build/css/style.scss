@@ -145,7 +145,7 @@ ul#output{
     overflow: hidden;
     width:12%;
     max-width: 350px;
-    margin-bottom: -8px;
+    margin-bottom: 12px;
     border-radius: 20px;
     list-style: none;
     padding:5px;
@@ -221,7 +221,7 @@ ul#output{
 .remove {
     opacity: 0;
   }
-  
+
 .about{
   position:fixed;
   top:35%;
@@ -230,10 +230,11 @@ ul#output{
   width: 60%;
   z-index: 999;
   border-radius: 10px;
+  padding: 10px;
   .close-about {
     font-family: $police;
     color: white;
-    font-size: 25px;
+    font-size: 24px;
     margin-left: 95%;
     text-decoration: none;
   }
