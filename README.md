@@ -2,7 +2,7 @@
 
 Netflex est une application web équivalante à une To-Do-List, qui permet de gérer les séries que l'on souhaite regarder. Celle-ci permet de créer une "WatchList" et d’obtenir des informations (synopsis, nombre de saisons, nombre d’épisodes...) sur les séries.
 
-![Alt text](www/img/screen.jpg?raw=true "Screenshot")
+![alt text](http://image.noelshack.com/fichiers/2018/50/7/1544971871-screen.png)
 
 ## Statut de développement
 
@@ -36,7 +36,7 @@ npm install
 
 * SCSS
 
-## Authors
+## Auteurs
 
 * **Alexandre Nugues** - *Front-end / Graphiste* - [Jaka](https://github.com/jaka)
 * **Corentin Moiszan** - *Developpeur* - [kvrentin](https://github.com/kvrentin)
