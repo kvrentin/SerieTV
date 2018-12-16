@@ -11,34 +11,25 @@
     <div class="slider">
       <div class="load">
       </div>
-
+      
       <div class="content">
         <div class="principal">
           <h1>NETFLEX</h1>
-
         </div>
 
-          <form>
-             <input type="text" name="pseudo" id="valeur" placeholder="Rechercher une série" onfocus="this.placeholder = ''" onblur= "this.placeholder = 'Rechercher une série'" size="30" maxlength="70" autocomplete="off" />
-             <input type="submit" value="AJOUTER" />
-          </form>
+        <form>
+          <input type="text" name="pseudo" id="valeur" placeholder="Rechercher une série" onfocus="this.placeholder = ''" onblur= "this.placeholder = 'Rechercher une série'" size="30" maxlength="70" autocomplete="off" />
+          <input type="submit" id="ajouter" value="AJOUTER" />
+        </form>
 
+        <h2>Ma WatchList</h2>
+        <ul id="output">
 
-          <h2>Ma WatchList</h2>
-          
-          <div class="outer">
-                    <div class="inner">
-                    <header id="TMDBtitle"></header>
-                    </div>
-          </div>
+        </ul>
 
-          <ul id="output">
-
-          </ul>
-        </div>
       </div>
+    </div>
 
     <script src="js/script.js"></script>
-
-</body>
+  </body>
 </html>
